@@ -1,7 +1,8 @@
 FROM registry:2.6
 
-COPY config.yml /
-COPY run /
+WORKDIR /tmp
+
+COPY . /tmp
 
 ENTRYPOINT [""]
-CMD ["/run"]
+CMD ["/tmp/run"]
