@@ -1,8 +1,8 @@
 FROM registry:2.6
 
-WORKDIR /tmp
+WORKDIR /app
 
-COPY . /tmp
+COPY . /app
 
 ENTRYPOINT [""]
-CMD ["/tmp/run"]
+CMD ["/app/run"]
