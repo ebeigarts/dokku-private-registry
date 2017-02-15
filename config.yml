@@ -21,3 +21,6 @@ auth:
   htpasswd:
     realm: basic-realm
     path: /htpasswd
+reporting:
+  newrelic:
+    verbose: true
