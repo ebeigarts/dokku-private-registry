@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "-----> Generating httpasswd $AUTH_USER"
+htpasswd -Bbn "$AUTH_USER" "$AUTH_PASSWORD" > /htpasswd
+
+echo "-----> Starting registry"
+registry serve config.yml
