@@ -33,3 +33,9 @@ docker push my-registry.example.com/user/busybox:latest
 docker rmi busybox:latest my-registry.example.com/user/busybox:latest
 docker pull my-registry.example.com/user/busybox:latest
 ```
+
+## Garbage Collect
+
+```bash
+dokku run my-registry /bin/registry garbage-collect /app/config.yml
+```
